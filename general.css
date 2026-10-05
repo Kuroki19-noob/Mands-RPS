@@ -1,0 +1,42 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: var(--accent-color);
+}
+a:hover{
+    text-decoration: underline;
+}   
+
+form input:hover{
+    border: 2px solid var(--accent-color);
+}
+form input:focus{
+    outline: none;
+    border-color: var(--text-color);
+}
+
+main{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+footer{
+    padding: 1.5rem;
+    background-color: #e7e7e7;
+}
