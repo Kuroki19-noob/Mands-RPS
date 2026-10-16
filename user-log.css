@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "DM sans", sans-serif; 
 }
 
 body {
@@ -81,7 +82,7 @@ input[type="email"] {
     height: 3rem;
     width: 100%;
     color: white;
-    background-color: #4f46e5;
+    background-color: black;
     border: none;
     font-weight: bold;
     cursor: pointer;
@@ -90,5 +91,7 @@ input[type="email"] {
 }
 
 .submit button:hover {
-    background-color: #4338ca;
+    background-color: white;
+    color:black;
+    border:solid 1px black;
 }
