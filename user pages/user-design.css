@@ -316,5 +316,43 @@ main {
   transform: scale(1.1);
 }
 
+.apartment-slide-container{
+  display: flex;
+  gap: 1rem;
+  height: 300px;
+  max-width: 250px;
+  border: solid 1px black;
+  background: #e4e4e4;
+  border-radius: 30px;
+  overflow: hidden;
+
+
+  transform: scale(1); 
+  transition: transform 300ms ease-in-out;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+.apartment-slide-container:hover{
+  transform: scale(1.05);
+}
+.apartment-slide img{ 
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.apartment-slide{
+  align-items: center;
+  justify-content: center;
+  
+}
+.apartment-slide a {
+  text-decoration: none;
+  color: inherit;
+}
+.apartment-slide-txt{
+  padding: 10px;
+}
+
+
 
 
