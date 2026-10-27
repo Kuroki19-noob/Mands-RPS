@@ -68,13 +68,256 @@
         <span class="user-role">Tenant</span>
       </div>
     </div>
-    <a href="logout.html" class="logout-btn" title="Logout">
-      <i data-lucide="log-out" class="icon"></i>
-    </a>
+      <a href="log-in.html" class="user-con-btn" title="Logout">
+      <i data-lucide="log-out" class="icon"></i></a>
+    <a href="settings.html" class="user-con-btn">
+      <i data-lucide="settings" class="icon" ></i>
+      </a>
   </div>
 </aside>
-    <main>
           
+<main class="dashboard-main">
+  <section class="inquiries-layout">
+
+    <!-- LEFT: INQUIRIES LIST -->
+    <aside class="inquiries-list">
+      <div class="inquiries-heading">
+        <div>
+          <h2>Inquiries</h2>
+          <p>Messages from apartment owners</p>
+        </div>
+        <button class="icon-button" title="New inquiry">
+          <i data-lucide="square-pen"></i>
+        </button>
+      </div>
+
+      <div class="inquiries-search">
+        <i data-lucide="search"></i>
+        <input type="text" id="searchInquiries"
+               placeholder="Search conversations...">
+      </div>
+
+      <div class="conversation-list" id="conversationList">
+
+        <button class="conversation-item active"
+                data-name="Juan Dela Cruz"
+                data-apartment="Sunrise Apartment"
+                data-rent="₱5,000 / month"
+                data-initials="JD">
+          <div class="chat-avatar owner-avatar">JD</div>
+          <div class="conversation-info">
+            <div class="conversation-top">
+              <strong>Juan Dela Cruz</strong>
+              <span>10:30 AM</span>
+            </div>
+            <p class="apartment-label">Sunrise Apartment</p>
+            <p class="last-message">Is the unit still available?</p>
+          </div>
+          <span class="unread-dot"></span>
+        </button>
+
+        <button class="conversation-item"
+                data-name="Maria Santos"
+                data-apartment="Greenfield Residences"
+                data-rent="₱6,500 / month"
+                data-initials="MS">
+          <div class="chat-avatar owner-avatar green">MS</div>
+          <div class="conversation-info">
+            <div class="conversation-top">
+              <strong>Maria Santos</strong>
+              <span>Yesterday</span>
+            </div>
+            <p class="apartment-label">Greenfield Residences</p>
+            <p class="last-message">Thank you for your inquiry!</p>
+          </div>
+        </button>
+
+        <button class="conversation-item"
+                data-name="Pedro Reyes"
+                data-apartment="City View Apartment"
+                data-rent="₱7,000 / month"
+                data-initials="PR">
+          <div class="chat-avatar owner-avatar orange">PR</div>
+          <div class="conversation-info">
+            <div class="conversation-top">
+              <strong>Pedro Reyes</strong>
+              <span>Oct 25</span>
+            </div>
+            <p class="apartment-label">City View Apartment</p>
+            <p class="last-message">You can schedule a visit.</p>
+          </div>
+        </button>
+
+      </div>
+    </aside>
+
+    <!-- CENTER: CHAT WINDOW -->
+    <section class="chat-window">
+
+      <header class="chat-header">
+        <div class="chat-contact">
+          <div class="chat-avatar owner-avatar" id="headerAvatar">JD</div>
+          <div>
+            <h3 id="chatName">Juan Dela Cruz</h3>
+            <p><span class="online-indicator"></span> Apartment Owner</p>
+          </div>
+        </div>
+
+        <button class="icon-button" title="More options">
+          <i data-lucide="ellipsis-vertical"></i>
+        </button>
+      </header>
+
+      <div class="chat-apartment-banner">
+        <div class="apartment-icon">
+          <i data-lucide="building-2"></i>
+        </div>
+        <div class="banner-info">
+          <strong id="bannerApartment">Sunrise Apartment</strong>
+          <span id="bannerRent">₱5,000 / month</span>
+        </div>
+        <span class="inquiry-status">Inquiry</span>
+      </div>
+
+      <div class="message-area" id="messageArea">
+        <div class="date-divider">
+          <span>Today</span>
+        </div>
+
+        <div class="message received">
+          <div class="message-avatar">JD</div>
+          <div class="message-content">
+            <div class="message-bubble">
+              Hello! Thank you for your interest in my apartment.
+              How can I help you?
+            </div>
+            <span class="message-time">10:25 AM</span>
+          </div>
+        </div>
+
+        <div class="message sent">
+          <div class="message-content">
+            <div class="message-bubble">
+              Hi! I would like to ask if the apartment is still available.
+            </div>
+            <span class="message-time">10:28 AM</span>
+          </div>
+        </div>
+
+        <div class="message received">
+          <div class="message-avatar">JD</div>
+          <div class="message-content">
+            <div class="message-bubble">
+              Yes, the unit is currently available. Would you like to
+              schedule a visit?
+            </div>
+            <span class="message-time">10:30 AM</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="message-form" id="messageForm">
+        <button type="button" class="icon-button attachment-button"
+                title="Attach file">
+          <i data-lucide="paperclip"></i>
+        </button>
+
+        <input type="text" id="messageInput"
+               placeholder="Write a message..."
+               autocomplete="off" required>
+
+        <button type="submit" class="send-button" title="Send message">
+          <i data-lucide="send"></i>
+        </button>
+      </form>
+
+      <p class="chat-disclaimer">
+        Keep your apartment inquiries and communication on Staylokal.
+      </p>
+    </section>
+
+    <!-- RIGHT: APARTMENT AND OWNER DETAILS -->
+    <aside class="inquiry-details">
+
+      <div class="details-heading">
+        <h3>Inquiry Details</h3>
+        <button class="icon-button" title="More options">
+          <i data-lucide="ellipsis"></i>
+        </button>
+      </div>
+
+      <div class="apartment-preview">
+        <div class="apartment-placeholder">
+          <i data-lucide="building-2"></i>
+        </div>
+
+        <div class="apartment-preview-info">
+          <span class="property-type">APARTMENT FOR RENT</span>
+          <h4 id="detailsApartment">Sunrise Apartment</h4>
+          <p><i data-lucide="map-pin"></i> San Jose del Monte, Bulacan</p>
+          <h3 id="detailsRent">₱5,000 <small>/ month</small></h3>
+        </div>
+
+        <button class="view-apartment-btn" type="button"
+                id="viewApartment">
+          <i data-lucide="external-link"></i>
+          View Apartment
+        </button>
+      </div>
+
+      <div class="details-divider"></div>
+
+      <div class="owner-details">
+        <h4>Apartment Owner</h4>
+        <div class="owner-profile">
+          <div class="chat-avatar owner-avatar" id="detailsAvatar">JD</div>
+          <div>
+            <strong id="detailsOwner">Juan Dela Cruz</strong>
+            <p>Property Owner</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="details-divider"></div>
+
+      <div class="inquiry-information">
+        <h4>Inquiry Information</h4>
+
+        <div class="info-row">
+          <i data-lucide="message-square"></i>
+          <div>
+            <span>Inquiry Type</span>
+            <strong>Apartment Availability</strong>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <i data-lucide="calendar-days"></i>
+          <div>
+            <span>Conversation Started</span>
+            <strong id="conversationDate">October 27, 2026</strong>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <i data-lucide="circle-check"></i>
+          <div>
+            <span>Conversation Status</span>
+            <strong class="status-text">Active Inquiry</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="details-note">
+        <i data-lucide="shield-check"></i>
+        <p>Always verify apartment details before making a payment.</p>
+      </div>
+
+    </aside>
+
+  </section>
+</main>
+
     </main>
     <script>
         lucide.createIcons();

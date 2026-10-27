@@ -68,22 +68,132 @@
         <span class="user-role">Tenant</span>
       </div>
     </div>
-    <a href="logout.html" class="logout-btn" title="Logout">
-      <i data-lucide="log-out" class="icon"></i>
-    </a>
+      <a href="log-in.html" class="user-con-btn" title="Logout">
+      <i data-lucide="log-out" class="icon"></i></a>
+    <a href="settings.html" class="user-con-btn">
+      <i data-lucide="settings" class="icon" ></i>
+      </a>
   </div>
 </aside>
     <main>
-          <section class="apartment-slide-container">
-               <span class="apartment-slide"><a href="/user pages/apartment-details.html">
-                     <img src="/Assets/apartment-sec1.jpg" alt="apartment">
-                     <div class="apartment-slide-txt">
-                     <h3>Brand name</h3>
-                     <p>Refreshing apartment near urban area</p>
-                     </div>
-                     </a>
-               </span>
-          </section>
+          <section class="apartment-section">
+  <div class="apartment-section-header">
+    <h2>Available Apartments</h2>
+    <p>Find a place that feels like home.</p>
+  </div>
+
+  <div class="apartment-grid">
+
+    <!-- Apartment 1 -->
+    <article class="apartment-card">
+      <a href="/user pages/apartment-details.html" class="apartment-link">
+        <div class="apartment-image">
+          <img
+            src="/Assets/apartment-sec1.jpg"
+            alt="Brand Name Apartment"
+            loading="lazy"
+          >
+          <span class="apartment-badge">Available</span>
+        </div>
+
+        <div class="apartment-card-content">
+          <h3>Brand Name Apartment</h3>
+          <p class="apartment-description">
+            Refreshing apartment near an urban area.
+          </p>
+
+          <div class="apartment-location">
+            <i data-lucide="map-pin"></i>
+            <span>San Jose del Monte, Bulacan</span>
+          </div>
+
+          <div class="apartment-card-footer">
+            <p class="apartment-price">
+              ₱5,000 <span>/ month</span>
+            </p>
+            <span class="view-details">
+              View Details
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+    </article>
+
+    <!-- Apartment 2 -->
+    <article class="apartment-card">
+      <a href="/user pages/apartment-details.html" class="apartment-link">
+        <div class="apartment-image">
+          <img
+            src="/Assets/apartment-sec2.jpg"
+            alt="Sunrise Apartment"
+            loading="lazy"
+          >
+          <span class="apartment-badge">Available</span>
+        </div>
+
+        <div class="apartment-card-content">
+          <h3>Sunrise Apartment</h3>
+          <p class="apartment-description">
+            Comfortable living space for students and professionals.
+          </p>
+
+          <div class="apartment-location">
+            <i data-lucide="map-pin"></i>
+            <span>San Jose del Monte, Bulacan</span>
+          </div>
+
+          <div class="apartment-card-footer">
+            <p class="apartment-price">
+              ₱6,500 <span>/ month</span>
+            </p>
+            <span class="view-details">
+              View Details
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+    </article>
+
+    <!-- Apartment 3 -->
+    <article class="apartment-card">
+      <a href="/user pages/apartment-details.html" class="apartment-link">
+        <div class="apartment-image">
+          <img
+            src="/Assets/apartment-sec3.jpg"
+            alt="Greenfield Residences"
+            loading="lazy"
+          >
+          <span class="apartment-badge">Available</span>
+        </div>
+
+        <div class="apartment-card-content">
+          <h3>Greenfield Residences</h3>
+          <p class="apartment-description">
+            A peaceful apartment with convenient nearby amenities.
+          </p>
+
+          <div class="apartment-location">
+            <i data-lucide="map-pin"></i>
+            <span>San Jose del Monte, Bulacan</span>
+          </div>
+
+          <div class="apartment-card-footer">
+            <p class="apartment-price">
+              ₱7,000 <span>/ month</span>
+            </p>
+            <span class="view-details">
+              View Details
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+    </article>
+
+  </div>
+</section>
     </main>
     <script>
         lucide.createIcons();
