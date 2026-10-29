@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../design.css">
     <link rel="stylesheet" href="../general.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="function.js"></script>
     <title>Home</title>
 </head>
 <body>
    
     <nav class="nav-bar">
+         <ul class="left-nav">
+            <li class="left-nav-item">
+                <a href="index.html" class="logo">
+                <img src="/Assets/icons/logo-icon.gif" alt="Staylokal Logo" class="logo-img">
+                <span class="logo-text">Staylokal</span>
+                 </a>
+            </li>
+        </ul>
         <ul class="nav-list">
             <li class="nav-item"><a href="index.html">Home</a></li>
             <li class="nav-item"><a href="apartments.html">apartments</a></li>
-            <li class="nav-item"><a href="price.html">prices</a></li>
+            <li class="nav-item"><a href="contancts.html">contacts</a></li>
             <li class="nav-item"><a href="about.html">about</a></li>
         </ul>
         <ul class="right-nav">
@@ -99,21 +108,32 @@
   </section>
         </main>
               <!--- 360 banner --->
-        <div class="banner-container">
-        <div class="banner-content">
-          <div class="banner-txt">
-              <h2>View Apartments</h2>
-              <h1 class="highlight-text">Use our 360 View</h1>
-              <p>Find the best place for you</p>
-              <a href="apartments.html" class="banner-btn">EXPLORE NOW!</a>
-          </div>
-            
-          <span class="banner-img"><img src="/Assets/banner.jpg" loading="lazy" style="max-width: 500px; max-height: 80vh;"></span>
+        <section class="banner-container">
+    <div class="banner-content">
 
-           
+        <div class="banner-txt">
+            <h2>View Apartments</h2>
+
+            <h1 class="highlight-text">
+                Use our 360 View
+            </h1>
+
+            <p>Find the best place for you.</p>
+
+            <a href="apartments.html" class="banner-btn">
+                EXPLORE NOW!
+            </a>
         </div>
-  </div>
-    </div>  
+
+        <div class="banner-img">
+            <img
+                src="/Assets/banner.jpg"
+                alt="Explore apartments with a 360-degree view"
+            >
+        </div>
+
+    </div>
+</section>
    
     <footer class="container" style="text-align: center; border-top: 1px solid var(--border-color); margin-top: 4rem;">
         <p>&copy; 2026 Apartment Moto?</p>
